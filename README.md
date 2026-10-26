@@ -164,9 +164,14 @@ output:
 
 
 client:
-<img width="468" height="181" alt="Screenshot 2026-10-26 184158" src="https://github.com/user-attachments/assets/346bf1bd-5c7f-4048-8f75-d2b936be66ef" />
+
+<img width="687" height="186" alt="Screenshot 2026-10-26 190202" src="https://github.com/user-attachments/assets/f6c6462b-54ce-4332-bfd1-963323ba7f04" />
+
+
+
 server:
-<img width="1917" height="1078" alt="Screenshot 2026-10-26 082540" src="https://github.com/user-attachments/assets/c6e0f961-2b54-4f11-bc3c-e0b5fd6f58f4" />
+
+<img width="942" height="231" alt="Screenshot 2026-10-26 190215" src="https://github.com/user-attachments/assets/e6cd721b-09d4-4c53-adbf-df021bcceaa2" />
 
 
 
