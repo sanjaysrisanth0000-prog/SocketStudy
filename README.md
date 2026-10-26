@@ -109,9 +109,11 @@ server_socket.close()
 ```
 output :
 
+Client:
+
 <img width="787" height="176" alt="Screenshot 2026-10-26 181315" src="https://github.com/user-attachments/assets/5ab1c528-8970-4f89-aa70-36b239e6464b" />
 
-output :
+Server:
 
 <img width="792" height="225" alt="Screenshot 2026-10-26 181323" src="https://github.com/user-attachments/assets/65a2b629-04c5-45c4-af4f-7c3dfcf97374" />
 
