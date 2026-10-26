@@ -53,6 +53,9 @@ Socket programming finds applications in various domains, including web developm
 4.	Networked Games: Online multiplayer games rely on socket programming to facilitate communication between game clients and servers.
 5.	RPC mechanisms: which allow processes to execute code on a remote server, often use socket programming for communication.
 
+TCP:
+
+
 client.py
 ```
 import socket
@@ -116,6 +119,54 @@ Client:
 Server:
 
 <img width="792" height="225" alt="Screenshot 2026-10-26 181323" src="https://github.com/user-attachments/assets/65a2b629-04c5-45c4-af4f-7c3dfcf97374" />
+
+
+UDP: 
+
+
+
+client.py:
+```
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+
+while True:
+    msg = input("Enter a data: ")
+    s.sendto(msg.encode(), ('localhost', 9000))
+    if msg == "exit":
+        break
+    data, addr = s.recvfrom(1024)
+    print(data.decode())
+
+s.close()
+```
+
+server.py:
+```
+import socket
+
+s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+s.bind(('localhost', 9000))
+print("Server waiting...")
+
+while True:
+    data, addr = s.recvfrom(1024)
+    msg = data.decode()
+    print("Client says:", msg)
+    if msg == "exit":
+        break
+    s.sendto(("ACK: " + msg).encode(), addr)
+
+s.close()
+```
+output:
+
+
+client:
+<img width="468" height="181" alt="Screenshot 2026-10-26 184158" src="https://github.com/user-attachments/assets/346bf1bd-5c7f-4048-8f75-d2b936be66ef" />
+server:
+<img width="1917" height="1078" alt="Screenshot 2026-10-26 082540" src="https://github.com/user-attachments/assets/c6e0f961-2b54-4f11-bc3c-e0b5fd6f58f4" />
 
 
 
